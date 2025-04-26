@@ -28,7 +28,7 @@ const AddStudent = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/students", {
+      await axios.post("https://wtassignment2.onrender.com/students", {
         ...student,
         enrollmentYear: Number(student.enrollmentYear),
       });
